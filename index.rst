@@ -1,5 +1,16 @@
 .. title:: Nutanix Files Bootcamp
 
+
+.. toctree::
+  :maxdepth: 2
+  :caption: Deployment Labs
+  :name: _deployment_labs
+  :hidden:
+
+  files_deploy/files_deploy
+  file_analytics_deploy/file_analytics_deploy
+  objects_deploy/objects_deploy
+
 .. toctree::
   :maxdepth: 2
   :caption:  Files Labs
@@ -30,24 +41,6 @@
    objects_versioning_access_control/objects_versioning_access_control
    objects_cli_scripts/objects_cli_scripts
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Bonus Labs
-   :name: _bonus
-   :hidden:
-
-   peer/peer
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Optional Labs
-  :name: _optional_labs
-  :hidden:
-
-  files_deploy/files_deploy
-  file_analytics_deploy/file_analytics_deploy
-  files_expand_cluster/files_expand_cluster
-  objects_deploy/objects_deploy
 
 .. toctree::
   :maxdepth: 2

@@ -37,23 +37,17 @@ Deploy Files
 
    .. figure:: images/4.png
 
-   .. note::
-
-     Clicking **Custom Configuration** will allow you to alter the scale up and scale out sizing of the Files VMs based on User and Throughput targets. It also allows for manual sizing of the Files cluster.
-
-     .. figure:: images/5.png
+  Clicking **Custom Configuration** to change Files Server VM number to 1（for lab purpose here）. This option will allow you to alter the scale up and scale out sizing of the Files VMs based on User and Throughput targets. It also allows for manual sizing of the Files cluster. 
 
 #. Click **Next**.
 
-#. Select the **Secondary - Managed** VLAN for the **Client Network**.
+#. Select the **Primary - Managed** VLAN for the **Client Network**.
 
    Each Files VM will consume a single IP on the client network.
 
    .. note::
 
-     In the HPOC environment it is critical to use the secondary VLAN for the client network if using separate client and storage networks.
-
-     It is typically desirable in production environments to deploy Files with dedicated virtual networks for client and storage traffic. When using two networks, Files will, by design, disallow client traffic the storage network, meaning VMs assigned to the primary network will be unable to access shares.
+     Using separate client and storage networks is typically desirable in production environments to deploy Files with dedicated virtual networks for client and storage traffic. When using two networks, Files will, by design, disallow client traffic the storage network, meaning VMs assigned to the primary network will be unable to access shares.
 
    .. note::
 
@@ -61,7 +55,7 @@ Deploy Files
 
      .. figure:: images/6.png
 
-#. Specify your cluster's **Domain Controller** VM IP (found in :ref:`stagingdetails`) as the **DNS Resolver IP** (e.g. 10.XX.YY.40). Leave the default (cluster) NTP Server.
+#. Specify your cluster's **Domain Controller** VM IP (found VM named AutoAD in VM list) as the **DNS Resolver IP** (e.g. 10.XX.YY.41). Leave the default (cluster) NTP Server.
 
    .. raw:: html
 
