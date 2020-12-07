@@ -36,7 +36,7 @@ Creating the Share
 
    - **Name** - Marketing
    - **Description (Optional)** - Departmental share for marketing team
-   - **File Server** - BootcampFS
+   - **File Server** - XYZ-Files
    - **Share Path (Optional)** - Leave blank. This field allows you to specify an existing path in which to create the nested share.
    - **Max Size (Optional)** - Leave blank. This field allows you to set a hard quota for the individual share.
    - **Select Protocol** - SMB
@@ -72,7 +72,7 @@ Testing the Share
 
      The Tools VM has already been joined to the **NTNXLAB.local** domain. You could use any domain joined VM to complete the following steps.
 
-#. Open ``\\BootcampFS.ntnxlab.local\`` in **File Explorer**.
+#. Open ``\\XYZ-Files.ntnxlab.local\`` in **File Explorer**.
 
    .. figure:: images/17.png
 
@@ -89,7 +89,7 @@ Testing the Share
 
    .. figure:: images/19.png
 
-#. Select **Users (BootcampFS\\Users)** and click **Remove**.
+#. Select **Users (XYZ-Files\\Users)** and click **Remove**.
 
 #. Click **Add**.
 

@@ -12,20 +12,20 @@ In this exercise you will deploy the File Analytics VM and scan the existing sha
 Deploy File Analytics
 +++++++++++++++++++++
 
-#. In **Prism** > **File Server** > click **Deploy File Analytics**
+#. In **Prism** > **File Server** > select File Server with your initials and click **Deploy File Analytics**, if FA is already deployed on this cluster, you just need to enable it and link to your own Files Server.
 
    .. figure:: images/31.png
 
 #. Select **Deploy**
 
-   For the purpose of saving time, the File Analytics 2.0.0 package has already been uploaded to your cluster. Files binaries can be downloaded from the Nutanix Portal and uploaded manually.
+   For the purpose of saving time, the File Analytics 2.2.0 package has already been uploaded to your cluster. Files binaries can be downloaded from the Nutanix Portal and uploaded manually.
 
 #. After the upload completes select **Install**
 
 #. Fill out the details
 
    - **Name** - Initials
-   - **Storage Container** – Will automatically select the container used by your file server instance
+   - **Storage Container** – Select the container used by your file server instance
    - **Network List** – Primary - Managed
 
 #. Select **Show Advanced Settings**
