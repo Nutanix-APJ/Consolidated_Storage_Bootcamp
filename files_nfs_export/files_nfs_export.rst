@@ -36,7 +36,7 @@ Creating the Export
 
    - **Name** - logs
    - **Description (Optional)** - File share for system logs
-   - **File Server** - BootcampFS
+   - **File Server** - XYZ-Files
    - **Share Path (Optional)** - Leave blank
    - **Max Size (Optional)** - Leave blank
    - **Select Protocol** - NFS
@@ -52,7 +52,7 @@ Creating the Export
    - **Authentication** - System
    - **Default Access (For All Clients)** - No Access
    - Select **+ Add exceptions**
-   - **Clients with Read-Write Access** - *The first 3 octets of your cluster network*\ .* (e.g. 10.38.1.\*)
+   - **Clients with Read-Write Access** - *The first 3 octets of your cluster network*\ .* (e.g. 10.42.1.\*)
 
    .. figure:: images/25b.png
 

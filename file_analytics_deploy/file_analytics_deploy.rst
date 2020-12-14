@@ -1,40 +1,17 @@
 .. _file_analytics_deploy:
 
 ----------------------
-File Analytics: Deploy
+File Analytics: Eable
 ----------------------
 
 Overview
 ++++++++
 
-In this exercise you will deploy the File Analytics VM and scan the existing shares to build out the dashboard.  You will also create anomaly alerts and view the audit details for your file server instance.
+For the purpose of saving time, the File Analytics 2.2.0 package has already been deployed to your cluster. In this exercise you will learn how to enable the File Analytics VM. In later lab sections, you will scan the existing shares to build out the dashboard, also create anomaly alerts and view the audit details for your file server instance.
 
-Deploy File Analytics
+
+Eable File Analytics
 +++++++++++++++++++++
-
-#. In **Prism** > **File Server** > select File Server with your initials and click **Deploy File Analytics**, if FA is already deployed on this cluster, you just need to enable it and link to your own Files Server.
-
-   .. figure:: images/31.png
-
-#. Select **Deploy**
-
-   For the purpose of saving time, the File Analytics 2.2.0 package has already been uploaded to your cluster. Files binaries can be downloaded from the Nutanix Portal and uploaded manually.
-
-#. After the upload completes select **Install**
-
-#. Fill out the details
-
-   - **Name** - Initials
-   - **Storage Container** – Select the container used by your file server instance
-   - **Network List** – Primary - Managed
-
-#. Select **Show Advanced Settings**
-
-#. Ensure **DNS Resolver IP** is set to your Active Directory, ntnxlab.local, domain controller/DNS IP address and **ONLY** that address.
-
-#. Choose **Deploy**
-
-#. You can monitor the deployment from the **Tasks** page.  The Analytics VM deployment should take ~5 minutes.
 
 #. In **Prism** > **File Server** > click **File Analytics**
 

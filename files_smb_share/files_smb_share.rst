@@ -20,9 +20,7 @@ If you have not yet deployed this VM, see the linked steps before proceeding wit
 
 #. Connect to the Windows Tools VM via RDP or console
 
-#. Download the sample files for File Analytics to the Tools VM:
 
-   - `https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip <https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip>`_
 
 Using SMB Shares
 ++++++++++++++++
@@ -36,7 +34,7 @@ Creating the Share
 
    - **Name** - Marketing
    - **Description (Optional)** - Departmental share for marketing team
-   - **File Server** - XYZ-Files
+   - **File Server** - XYZ-Files (Choose the Files Server you created in previous lab)
    - **Share Path (Optional)** - Leave blank. This field allows you to specify an existing path in which to create the nested share.
    - **Max Size (Optional)** - Leave blank. This field allows you to set a hard quota for the individual share.
    - **Select Protocol** - SMB
@@ -76,7 +74,11 @@ Testing the Share
 
    .. figure:: images/17.png
 
-#. Test accessing the Marketing share by extracting the SampleData_Small.zip files downloaded in the previous step into the share.
+#. Download the sample files for File Analytics to the Tools VM:
+
+   - `https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip <https://peerresources.blob.core.windows.net/sample-data/SampleData_Small.zip>`_
+
+#. Test the share by extracting the SampleData_Small.zip files into the marketing share.
 
    .. figure:: images/18.png
 

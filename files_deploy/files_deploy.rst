@@ -9,25 +9,11 @@ Files: Deploy
 Deploy Files
 ++++++++++++
 
-#. In **Prism > File Server**, click **+ File Server** to open the **New File Server Pre-Check** dialogue.
+#. In **Prism > File Server**, click **+ File Server**.
 
    .. figure:: images/1.png
 
-   For the purpose of saving time, the Files has already been uploaded to your cluster. Files binaries can be downloaded directly through Prism or uploaded manually.
-
-   .. figure:: images/2.png
-
-   Additionally, the cluster's **Data Services** IP Address has already been configured (*10.XX.YY.38*). In a Files cluster, storage is presented to the Files VMs as a Volume Group via iSCSI, hence the dependency on the Data Services IP.
-
-   .. note::
-
-     If staging your own environment, the Data Services IP can be easily configured by selecting :fa:`gear` **> Cluster Details**, specifying the **iSCSI Data Services IP**, and clicking **Save**. Currently, the Data Services IP must be in the same subnet as your CVMs.
-
-   Lastly Files will ensure that at least 1 network has been configured on the cluster. A minimum of 2 networks are recommended to have segmentation between the client side and storage side networks.
-
-#. Click **Continue**.
-
-   .. figure:: images/3.png
+   For the purpose of saving time, the Files has already been configured to your cluster with cluster's **Data Services** IP Address (*10.XX.YY.38*). In a Files cluster, storage is presented to the Files VMs as a Volume Group via iSCSI, hence the dependency on the Data Services IP.
 
 #. Fill out the following fields:
 
@@ -49,12 +35,6 @@ Deploy Files
 
      Using separate client and storage networks is typically desirable in production environments to deploy Files with dedicated virtual networks for client and storage traffic. When using two networks, Files will, by design, disallow client traffic the storage network, meaning VMs assigned to the primary network will be unable to access shares.
 
-   .. note::
-
-     As this is an AHV managed network, configuration of individual IPs is not necessary. In an ESXi environment, or using an unmanaged AHV network, you would specify the network details and available IPs as shown below.
-
-     .. figure:: images/6.png
-
 #. Specify your cluster's **Domain Controller** VM IP (found VM named AutoAD in VM list) as the **DNS Resolver IP** (e.g. 10.XX.YY.41). Leave the default (cluster) NTP Server.
 
    .. raw:: html
@@ -69,8 +49,6 @@ Deploy Files
 
    Each Files VM will consume a single IP on the storage network, plus 1 additional IP for the cluster.
 
-   .. figure:: images/8.png
-
 #. Click **Next**.
 
 #. Fill out the following fields:
@@ -83,8 +61,6 @@ Deploy Files
    - **User Management and Authentication** - Unmanaged
 
    .. figure:: images/9.png
-
-   .. note:: In unmanaged mode, users are only identified by UID/GID. In Files 3.5, Files supports both NFSv3 and NFSv4
 
 #. Click **Next**.
 

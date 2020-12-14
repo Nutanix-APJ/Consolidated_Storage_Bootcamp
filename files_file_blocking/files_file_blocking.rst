@@ -9,7 +9,7 @@ Selective File Blocking
 
 In this exercise you will configure Files to block specific file extensions for the file server and the Marketing share.
 
-#. In **Prism** > **File Server** > Select your file server and click **Update** > then click **Blocked File Types**
+#. In **Prism** > **File Server** > Select your file server XYZ-Files and click **Update** > then click **Blocked File Types**
 
    .. figure:: images/47.png
 
@@ -21,9 +21,7 @@ In this exercise you will configure Files to block specific file extensions for 
 
    .. code-block:: bash
 
-	 new-item \\BootcampFS.ntnxlab.local\marketing\MyMovie.flv
-
-   .. figure:: images/49.png
+	 new-item \\XYZ-Files.ntnxlab.local\marketing\MyMovie.flv
 
 #. In **Prism** > **File Server** > **Share/Export** > click on the Marketing share and select **Update**
 

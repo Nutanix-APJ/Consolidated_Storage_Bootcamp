@@ -34,7 +34,7 @@ There are several ways to apply user and group mappings including rule based, ex
 
    .. figure:: images/55.png
 
-#. Click **Next** then from the **Settings* page check **Simultaneous access to the same files from both protocols**.
+#. Click **Next** then from the **Settings** page check **Simultaneous access to the same files from both protocols**.
 
    .. figure:: images/56.png
 
@@ -47,7 +47,7 @@ There are several ways to apply user and group mappings including rule based, ex
      .. code-block:: bash
 
        [root@CentOS ~]# mkdir /filesmulti
-       [root@CentOS ~]# mount.nfs4 BootcampFS.ntnxlab.local:/Marketing /filesmulti
+       [root@CentOS ~]# mount.nfs4 XYZ-Files.ntnxlab.local:/Marketing /filesmulti
        [root@CentOS ~]# dir /filesmulti
        dir: cannot open directory /filesmulti: Permission denied
        [root@CentOS ~]#
