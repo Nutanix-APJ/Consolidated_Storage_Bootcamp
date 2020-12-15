@@ -9,6 +9,8 @@ Objects: Creating Buckets, Users, and Access Control
 Overview
 ++++++++
 
+An objects cluster is already provisioned for you. In this exercise you will only create buckets.
+
 
 Create Bucket In Prism
 +++++++++++++++++++++++
