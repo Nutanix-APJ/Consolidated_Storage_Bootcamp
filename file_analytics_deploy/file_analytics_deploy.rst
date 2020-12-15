@@ -13,7 +13,7 @@ For the purpose of saving time, the File Analytics 2.2.0 package has already bee
 Eable File Analytics
 +++++++++++++++++++++
 
-#. In **Prism** > **File Server** > click **File Analytics**
+#. In **Prism** > **File Server** > while selecting your own Files server, click **File Analytics**
 
    .. figure:: images/33.png
 
