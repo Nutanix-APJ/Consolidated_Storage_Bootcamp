@@ -101,7 +101,7 @@ You will first provision a CentOS VM to use as a client for your Files export.
 
        [root@CentOS ~]# yum install -y nfs-utils #This installs the NFSv4 client
        [root@CentOS ~]# mkdir /filesmnt
-       [root@CentOS ~]# mount.nfs4 BootcampFS.ntnxlab.local:/ /filesmnt/
+       [root@CentOS ~]# mount.nfs4 XYZ-Files.ntnxlab.local:/ /filesmnt/
        [root@CentOS ~]# df -kh
        Filesystem                      Size  Used Avail Use% Mounted on
        /dev/mapper/centos_centos-root  8.5G  1.7G  6.8G  20% /
@@ -111,7 +111,7 @@ You will first provision a CentOS VM to use as a client for your Files export.
        tmpfs                           1.9G     0  1.9G   0% /sys/fs/cgroup
        /dev/sda1                       494M  141M  353M  29% /boot
        tmpfs                           377M     0  377M   0% /run/user/0
-       BootcampFS.ntnxlab.local:/             1.0T  7.0M  1.0T   1% /afsmnt
+       XYZ-Files.ntnxlab.local:/             1.0T  7.0M  1.0T   1% /afsmnt
        [root@CentOS ~]# ls -l /filesmnt/
        total 1
        drwxrwxrwx. 2 root root 2 Mar  9 18:53 logs
@@ -122,7 +122,7 @@ You will first provision a CentOS VM to use as a client for your Files export.
 
      .. code-block:: bash
 
-       echo 'BootcampFS.ntnxlab.local:/ /filesmnt nfs4' >> /etc/fstab
+       echo 'XYZ-Files.ntnxlab.local:/ /filesmnt nfs4' >> /etc/fstab
 
 #. The following command will add 100 2MB files filled with random data to ``/filesmnt/logs``:
 
