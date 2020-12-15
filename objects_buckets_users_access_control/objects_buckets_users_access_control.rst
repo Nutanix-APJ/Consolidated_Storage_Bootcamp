@@ -9,7 +9,14 @@ Objects: Creating Buckets, Users, and Access Control
 Overview
 ++++++++
 
-An objects cluster is already provisioned for you. In this exercise you will only create buckets.
+Nutanix Objects is a highly-scalable, software defined Object Storage solution that can be used for several types of applications, such as: Backup, Big Data, SIEM, Cloud Native Apps, and Long Term Retention. 
+
+It is deployed and managed as part of the Nutanix Enterprise Cloud Platform, eliminating the need for additional storage silos. An objects cluster is already provisioned for you. 
+
+In the following steps we will see how to: 
+
+Create a Bucket
+Create an IAM User and adding to bucket-share
 
 
 Create Bucket In Prism
