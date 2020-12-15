@@ -69,27 +69,6 @@ You will first provision a CentOS VM to use as a client for your Files export.
 
 .. note:: If you have already deployed the :ref:`linux_tools_vm` as part of another lab, you may use this VM as your NFS client instead.
 
-#. In **Prism > VM > Table**, click **+ Create VM**.
-
-#. Fill out the following fields:
-
-   - **Name** - *Initials*\ -NFS-Client
-   - **Description** - CentOS VM for testing Files NFS export
-   - **vCPU(s)** - 2
-   - **Number of Cores per vCPU** - 1
-   - **Memory** - 2 GiB
-   - Select **+ Add New Disk**
-      - **Operation** - Clone from Image Service
-      - **Image** - CentOS
-      - Select **Add**
-   - Select **Add New NIC**
-      - **VLAN Name** - Secondary
-      - Select **Add**
-
-#. Click **Save**.
-
-#. Select the *Initials*\ **-NFS-Client** VM and click **Power on**.
-
 #. Note the IP address of the VM in Prism, and connect via SSH using the following credentials:
 
    - **Username** - root
