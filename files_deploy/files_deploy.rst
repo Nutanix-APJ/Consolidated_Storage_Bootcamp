@@ -13,17 +13,15 @@ Deploy Files
 
    .. figure:: images/1.png
 
-   For the purpose of saving time, the Files has already been configured to your cluster with cluster's **Data Services** IP Address (*10.XX.YY.38*). In a Files cluster, storage is presented to the Files VMs as a Volume Group via iSCSI, hence the dependency on the Data Services IP.
-
 #. Fill out the following fields:
 
    - **Name** - *Intials*-Files (e.g. XYZ-Files)
    - **Domain** - ntnxlab.local
    - **File Server Size** - 1 TiB
 
-   .. figure:: images/4.png
+   Clicking **Custom Configuration** to change Files Server VM number to 1（for lab purpose here）. This option will allow you to alter the scale up and scale out sizing of the Files VMs based on User and Throughput targets. It also allows for manual sizing of the Files cluster. 
 
-  Clicking **Custom Configuration** to change Files Server VM number to 1（for lab purpose here）. This option will allow you to alter the scale up and scale out sizing of the Files VMs based on User and Throughput targets. It also allows for manual sizing of the Files cluster. 
+   .. figure:: images/4.png
 
 #. Click **Next**.
 
