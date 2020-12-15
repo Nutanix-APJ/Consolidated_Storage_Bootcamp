@@ -13,12 +13,6 @@ Nutanix Objects is a highly-scalable, software defined Object Storage solution t
 
 It is deployed and managed as part of the Nutanix Enterprise Cloud Platform, eliminating the need for additional storage silos. An objects cluster is already provisioned for you. 
 
-In the following steps we will see how to: 
-
-Create a Bucket
-Create an IAM User and adding to bucket-share
-
-
 Create Bucket In Prism
 +++++++++++++++++++++++
 
