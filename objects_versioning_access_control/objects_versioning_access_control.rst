@@ -9,10 +9,15 @@ Objects: Versioning and Access Controls
 Overview
 ++++++++
 
+In this exercise you will use Object Browser to create and use buckets in the object store using your generated access key.
+Note that:
+1. A bucket is usually created in Prism Central > Objects > Object Store > Create Bucket
+2. Creating a Bucket in Prism Central allows for enhanced user access control, versioning, WORM capabilities and configuring lifecycle policies
+3. The Objects browser is a graphical way of accessing a Bucket
+4. A Bucket can also be managed by an application or a user using a script
+
 Accessing & Creating Buckets With Objects Browser
 +++++++++++++++++++++++++++++++++++++++++++++++++
-
-In this exercise you will use Objects Browser to create and use buckets in the object store using your generated access key.
 
 Download the Sample Images
 ..........................
